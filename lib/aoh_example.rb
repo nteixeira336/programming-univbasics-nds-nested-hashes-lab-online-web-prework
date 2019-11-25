@@ -1,3 +1,4 @@
+require "pry"
 # Examples inspired by David Foster Wallace's # (2/21/1962 to 9/12/2008) _Infinite Jest_
 
 DON_G = { name:  "Don Gately", occupation: "Live-in Staff" }
@@ -33,7 +34,7 @@ end
 
 def aoh_lookup(assembled_aoh, 0, :occupation)
   assembled_aoh[0][:occupation]
-
+binding.pry 
 end
 
 def aoh_update(aoh, row, key, new_value)
