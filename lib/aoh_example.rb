@@ -31,7 +31,9 @@ def literal_aoh
     BRUCE_G]
 end
 
-def aoh_lookup(aoh, row, key)
+def aoh_lookup(assembled_aoh, 0, :occupation)
+  assembled_aoh[0][:occupation]
+
 end
 
 def aoh_update(aoh, row, key, new_value)
